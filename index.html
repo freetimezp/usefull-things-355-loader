@@ -5,17 +5,117 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="./assets/css/progressbar.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
         <link rel="stylesheet" href="./assets/css/style.css" />
         <title>Project</title>
     </head>
 
     <body>
-        <div class="progress-bar"></div>
+        <!-- =========================================
+             PRELOADER
+        ========================================== -->
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="./assets/js/progressbar.js"></script>
+        <div class="preloader">
+            <div class="noise"></div>
+
+            <div class="loader-bg">
+                <div class="loader-circle one"></div>
+                <div class="loader-circle two"></div>
+            </div>
+
+            <div class="loader-content">
+                <div class="loading-text">
+                    <span>P</span>
+                    <span>R</span>
+                    <span>E</span>
+                    <span>L</span>
+                    <span>O</span>
+                    <span>A</span>
+                    <span>D</span>
+                </div>
+
+                <div class="percent">0%</div>
+
+                <div class="progress-wrapper">
+                    <div class="progress-bar"></div>
+                </div>
+
+                <div class="stage-text">
+                    <span class="active">Initialize</span>
+                    <span>Assets</span>
+                    <span>Effects</span>
+                    <span>Launch</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- =========================================
+             WEBSITE
+        ========================================== -->
+
+        <section class="hero">
+            <div class="hero-content">
+                <div class="mini-tag">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Cinematic GSAP Experience</span>
+                </div>
+
+                <h1>Future Motion</h1>
+
+                <p>
+                    A multi-stage animated experience using GSAP, ScrollTrigger, cinematic transitions, progress
+                    systems, smooth reveal animations, and immersive UI motion design.
+                </p>
+
+                <div class="glass-card">
+                    <h2>Interactive Motion Design</h2>
+
+                    <p>
+                        Scroll down to reveal advanced panels with layered animations powered by GSAP ScrollTrigger.
+                        Every section animates independently with depth, blur, scaling, and cinematic timing.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="panels">
+            <div class="panel">
+                <h2>Creative</h2>
+
+                <p>
+                    Build immersive storytelling with fluid transitions, beautiful gradients, layered glow effects, and
+                    cinematic timing systems.
+                </p>
+            </div>
+
+            <div class="panel">
+                <h2>Motion</h2>
+
+                <p>
+                    ScrollTrigger allows advanced scroll-based choreography, making interfaces feel alive and deeply
+                    interactive.
+                </p>
+            </div>
+
+            <div class="panel">
+                <h2>Experience</h2>
+
+                <p>
+                    Blend UI, animation, and typography into a modern digital experience inspired by premium interactive
+                    websites.
+                </p>
+            </div>
+        </section>
+
+        <!-- Replay -->
+
+        <button class="replay-btn">
+            <i class="fa-solid fa-rotate-right"></i>
+        </button>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script>
 
         <script src="./assets/js/main.js"></script>
     </body>
